@@ -71,7 +71,7 @@
 \NewDocumentCommand{\clientname}{m}{\newcommand{\theclientname}{#1}}
 \NewDocumentCommand{\managername}{m}{\newcommand{\themanagername}{#1}}
 \NewDocumentCommand{\typeofdocument}{m}{\newcommand{\thetypeofdocument}{#1}}
-\NewDocumentCommand{\helper}{m}{\textit{{\color{blue}\small#1}}}
+\NewDocumentCommand{\helper}{m}{{\small#1}}
 
 {\renewcommand{\arraystretch}{1.5}%
 \NewDocumentCommand{\infotable} {  }{%

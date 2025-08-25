@@ -45,10 +45,10 @@
 \titleformat*{\section}{\large\bfseries}
 
 \titleformat{\subsection}{\vspace{-3mm}\large\bfseries}{}{0em}%
-{\normalsize\bfseries\thesection.\arabic{subsection}\quad}[{\titlerule[0.4pt]}]
+{\normalsize\bfseries\thesection.\arabic{subsection}\quad}[]
 
 \titleformat{\subsubsection}{\vspace{-3mm}\large\bfseries}{}{0em}%
-{\normalsize\bfseries\thesection.\arabic{subsection}.\arabic{subsubsection}\quad}[{\titlerule[0.4pt]}]
+{\normalsize\bfseries\thesection.\arabic{subsection}.\arabic{subsubsection}\quad}[]
 
 \makeatletter
 
@@ -71,7 +71,7 @@
 \NewDocumentCommand{\clientname}{m}{\newcommand{\theclientname}{#1}}
 \NewDocumentCommand{\managername}{m}{\newcommand{\themanagername}{#1}}
 \NewDocumentCommand{\typeofdocument}{m}{\newcommand{\thetypeofdocument}{#1}}
-\NewDocumentCommand{\helper}{m}{\textit{{\color{blue}\small#1}}}
+\NewDocumentCommand{\helper}{m}{{\small#1}}
 
 {\renewcommand{\arraystretch}{1.5}%
 \NewDocumentCommand{\infotable} {  }{%
